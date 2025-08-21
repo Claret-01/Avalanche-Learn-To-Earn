@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalanche Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Side Navigation Menu -->
+   <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" id="close-menu-btn">&times;</a>
+        <a href="#" id="menu-home-link">&#127968; Home</a>
+        <a href="#" id="menu-profile-link">&#128100; Profile</a>
+        <a href="#">&#9881; Settings</a>
+        <a href="#" id="menu-leaderboard-link">&#127942; Leaderboard</a>
+        <a href="#" id="menu-quests-link">&#128640; Quests</a>
+        <a href="#">&#127912; Reward Store</a>
+        <a href="#">&#128682; Logout</a>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" id="open-menu-btn">&#9776;</div>
+            <div class="logo-container">
+                 <div class="logo"><div class="avalanche-logo"></div></div>
+            </div>
+            <div class="profile-actions">
+                <div class="icon">&#128276;</div>
+                <div class="profile-circle" id="profile-circle-btn">C</div>
+            </div>
+        </header>
+
+        <!-- Main Banner -->
+        <main class="main-banner">
+            <p class="participants">&#128101; 1.7M Participants</p>
+            <h2 id="main-title">Avalanche Academy🎓</h2>
+            <button class="join-btn" id="join-btn">Join</button>
+        </main>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs">
+            <div class="tab active" data-target="home">Home</div>
+            <div class="tab" data-target="quests">Avalanche Quests</div>
+            <div class="tab" data-target="leaderboard">Leaderboard</div>
+            <div class="tab" data-target="profile">Profile</div>
+            <div class="social-links">
+                <a href="#" title="Twitter">&#128172;</a>
+                <a href="#" title="Website">&#127760;</a>
+                <a href="#" title="Email">&#128231;</a>
+            </div>
+        </nav>
+
+        <!-- Main Content Wrapper -->
+        <div class="content">
+
+            <!-- Pane 1: Home -->
+            <div id="home" class="content-pane active">
+                <div class="home-hero">
+                    <h1>Avalanche Learn To Earn <span class="fire-emoji">🎯</span></h1>
+                    <p class="subtitle"><strong>Onboarding made simple:</strong> A Learn-to-Earn + Quest platform built on Avalanche.</p>
+                    <button class="cta-button" id="start-quests-btn">Start Your First Quest</button>
+                </div>
+                <div class="home-section">
+                    <h2><span class="emoji">🚀</span> Inspiration</h2>
+                    <p>Getting started on Avalanche is exciting, but can be overwhelming. New users need clear guidance and hands-on quests.</p>
+                </div>
+                 <div class="home-section">
+            <h2><span class="emoji">💡</span> What it does</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3><span class="emoji">📚</span> Learn-to-Earn</h3>
+                    <p>Short, engaging lessons on Avalanche basics and the wider ecosystem.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="emoji">🎮</span> Gamified Quests</h3>
+                    <p>Complete hands-on tasks to earn valuable XP and exclusive rewards.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="emoji">🌍</span> Community Focused</h3>
+                    <p>Climb the leaderboards, maintain streaks, and join squad challenges.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><span class="emoji">🔗</span> dApp Integration</h3>
+                    <p>Quests are linked directly to real dApps on the Avalanche testnet.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+            <!-- Pane 2: Quests -->
+            <div id="quests" class="content-pane">
+                 <div class="quest" id="quest1">
+                <div class="quest-header">
+                    <span>Quest 1: Avalanche 101</span>
+                    <div class="progress-bar">
+                       <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="quest-details">
+                    <p class="reward">&#127873; Reward: 100 XP + Avalanche NFT Badge</p>
+                    <ul>
+                        <li>&#128214; Read the Intro to Avalanche</li>
+                        <li>&#128172; Follow Avalanche on X</li>
+                        <li>&#128269; Explore Avalanche Explorer</li>
+                        <li>&#129300; Pass a 5-question quiz</li>
+                        <li>&#127941; Claim your NFT badge</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="quest">Quest 2: Create your first wallet</div>
+                <div class="quest">Quest 3: Follow Avalanche on X</div>
+                <div class="quest">Quest 4: Explore DeFi on Avalanche</div>
+                <div class="quest">Quest 5: Join the Avalanche community</div>
+            </div>
+
+            <!-- Pane 3: Leaderboard -->
+            <div id="leaderboard" class="content-pane">
+                 <table class="leaderboard-table">
+                    <thead><tr><th>#</th><th>Username</th><th>XPs</th></tr></thead>
+                    <tbody><tr><td>1</td><td>DefiLord</td><td>&#128308; 56.3K 🔥</td></tr></tbody>
+                    <tbody><tr><td>2</td><td>CryptoQueen</td><td>&#128308; 54.1K 🔥</td></tr></tbody>
+                    <tbody><tr><td>3</td><td>BlockchainGuru</td><td>&#128308; 52.7K 🔥</td></tr></tbody>
+                    <tbody><tr><td>4</td><td>DeFiMaster</td><td>&#128308; 50.5K</td></tr></tbody>
+                    <tbody><tr><td>5</td><td>NFTArtist</td><td>&#128308; 48.9K</td></tr></tbody>
+                    <tbody><tr><td>6</td><td>SmartContractDev</td><td>&#128308; 47.2K</td></tr></tbody>
+                    <tbody><tr><td>7</td><td>CryptoTrader</td><td>&#128308; 45.8K</td></tr></tbody>
+                    <tbody><tr><td>8</td><td>Web3Innovator</td><td>&#128308; 44.3K</td></tr></tbody>
+                    <tbody><tr><td>9</td><td>TokenEconomist</td><td>&#128308; 42.9K</td></tr></tbody>
+                    <tbody><tr><td>10</td><td>BlockchainBuilder</td><td>&#128308; 41.5K</td></tr></tbody>
+                    <tbody><tr><td></td><td></td>                             <td><h4><em>Next >></em></h4></td></tr></tbody>
+                </table>
+            </div>
+
+            <!-- Pane 4: Profile -->
+            <!-- Profile Content -->
+        <div id="profile" class="content-pane">
+            <div class="profile-card">
+                <div class="profile-avatar">C</div>
+                <div class="profile-info">
+                    <h3 class="username">CryptoUser</h3>
+                    <p class="user-email">crypto.user@example.com</p>
+                    <span class="user-level">Level 5 Adventurer</span>
+                </div>
+                </div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <h4>Quests Completed</h4>
+                    <p>12</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Total XP</h4>
+                    <p>1,250🔥</p>
+                </div>
+                <div class="stat-item">
+                    <h4>NFT Badges</h4>
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+        </div> <!-- End of content wrapper -->
+
+<!-- And fix your footer -->
+<footer class="footer">
+    <p>&copy; 2023 Avalanche Academy. All rights reserved.</p>
+    <p>Follow us on <a href="https://twitter.com/avalancheavax" target="_blank">Twitter</a> | <a href="https://www.avax.network/" target="_blank">Website</a></p>
+</footer>
+   </body>
+    <script src="script.js" defer></script>
+</html>
